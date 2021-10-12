@@ -56,7 +56,6 @@ class Previewscreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('사진 미리보기')),
       // 이미지는 디바이스에 파일로 저장됩니다. 이미지를 보여주기 위해 주어진 경로로 `Image.file`을 생성하세요.
-      resizeToAvoidBottomPadding: false,
       body: Center(
 
         child: Column(
@@ -132,6 +131,7 @@ class Previewscreen extends StatelessWidget {
         ),
 
       ),
+      resizeToAvoidBottomInset: false,
 
     );
 

@@ -183,6 +183,7 @@ class CameraState extends State<Camera> with WidgetsBindingObserver {
                       CupertinoPageRoute(builder: (BuildContext context) => setting(),),),),
                     ListTile(leading: Icon(Icons.info_outline, color: Colors.blue,), title: Text("제작자 및 정보보기",  style: TextStyle(fontSize: 25.9, color: Colors.deepOrangeAccent),), onTap: () => Navigator.push(context,
                       CupertinoPageRoute(builder: (BuildContext context) =>info(),),),),
+                    ListTile(leading: Icon(Icons.insert_drive_file_outlined, color: Colors.lightBlue,) ,title: Text("오픈소스 라이선스", style: TextStyle(fontSize: 24, color: Colors.black54),), onTap: () => Navigator.of(context).push(CupertinoPageRoute(builder: (_) => LicensePage())),)
                     //FlatButton(child:  Text("오픈소스 라이선스", style: TextStyle(fontSize: 28, color: Colors.deepPurpleAccent),),  onPressed: () {}),
 
                   ], ),
